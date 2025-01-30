@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "description": "dictzip for Windows 10 (x64)",
+    "description": "dictzip for Windows 10 (x64).",
     "homepage": "https://github.com/KaseyJenkins/dictzip-win64",
     "license": "GPL v1",
     "architecture": {
@@ -11,8 +11,8 @@
     },
     "bin": "dictzip.exe",
     "checkver": {
-        "url": "https://github.com/KaseyJenkins/dictzip-win64/releases/latest",
-        "regex": "dictzip.zip"
+        "url": "https://github.com/KaseyJenkins/dictzip-win64",
+        "checkver": "github"
     },
     "autoupdate": {
         "architecture": {

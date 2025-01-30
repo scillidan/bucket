@@ -1,0 +1,42 @@
+{
+    "version": "1.4.1",
+    "description": "Switch between windows using ALT+backtick.",
+    "homepage": "https://github.com/akiver/AltBacktick",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/akiver/AltBacktick/releases/download/v1.4.1/AltBacktick.exe",
+            "hash": "b691b6deb28038254d32212ecb3b41a6b682fa7471231f908f3163776b2c1cec",
+				    "shortcuts": [
+				        [
+				            "AltBacktick.exe",
+				            "AltBacktick"
+				        ]
+				    ]
+        },
+        "32bit": {
+            "url": "https://github.com/akiver/AltBacktick/releases/download/v1.4.1/AltBacktick_x86.exe",
+            "hash": "6adcfe84c0e08050018ce755f49ff924eb01bb0430c946447d487f702ee66370",
+				    "shortcuts": [
+				        [
+				            "AltBacktick_x86.exe",
+				            "AltBacktick"
+				        ]
+				    ]
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/akiver/AltBacktick",
+        "checkver": "github"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/akiver/AltBacktick/releases/download/$version/AltBacktick.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/akiver/AltBacktick/releases/download/$version/AltBacktick_x86.exe"
+            }
+        }
+    }
+}

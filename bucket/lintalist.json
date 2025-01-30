@@ -1,0 +1,36 @@
+{
+    "version": "1.9.23",
+    "description": "Searchable interactive texts to copy & paste text, run scripts, using easily exchangeable bundles.",
+    "homepage": "https://github.com/lintalist/lintalist",
+    "license": "GPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lintalist/lintalist/releases/download/v1.9.23/lintalist64.zip",
+            "hash": "8b147d96751a5ad860989d26157c8db7e6c28523be6e6663de8f7d0894d00246"
+        },
+        "32bit": {
+            "url": "https://github.com/lintalist/lintalist/releases/download/v1.9.23/lintalist.zip",
+            "hash": "11d2ebbd7118b8f39cffaf65f1778bba43b204e30c4fb463f5d05ebca9e3984c"
+        }
+    },
+    "shortcuts": [
+        [
+            "lintalist.exe",
+            "Lintalist"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/lintalist/lintalist",
+        "checkver": "github"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lintalist/lintalist/releases/download/$version/lintalist64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/lintalist/lintalist/releases/download/$version/lintalist.zip"
+            }
+        }
+    }
+}

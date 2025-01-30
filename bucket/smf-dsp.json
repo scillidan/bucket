@@ -1,6 +1,6 @@
 {
     "version": "0.10.0",
-    "description": "Advanced MIDI file player",
+    "description": "Advanced MIDI file player.",
     "homepage": "https://github.com/jpcima/smf-dsp",
     "license": "BSL-1.0",
     "architecture": {
@@ -29,7 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/jpcima/smf-dsp/releases/download/$version/SMF-DSP.$majorVersion.$minorVersion.$patchVersion.for.Windows.7z"
+                "url": "https://github.com/jpcima/smf-dsp/releases/download/v$version/SMF-DSP.$version.for.Windows.7z"
             }
         }
     }

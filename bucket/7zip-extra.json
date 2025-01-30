@@ -1,6 +1,6 @@
 {
     "version": "24.09",
-    "description": "7-Zip Extra: standalone console version, 7z DLL, Plugin for Far Manager",
+    "description": "7-Zip Extra: standalone console version, 7z DLL, Plugin for Far Manager.",
     "homepage": "https://www.7-zip.org/",
     "license": "LGPL-2.1-or-later",
     "architecture": {

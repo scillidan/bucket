@@ -1,6 +1,6 @@
 {
     "version": "0.2.1",
-    "description": "Convert SVG to PNG",
+    "description": "Convert SVG to PNG.",
     "homepage": "https://github.com/v0lt/svg2png",
     "license": "MIT",
     "architecture": {
