@@ -9,6 +9,7 @@
             "hash": "2ea1703c91a738f33d49b4025ea56ec231edf9a15c6bd8e2b03b73ae73d194ba"
         }
     },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\SmartZip.ini\")) { New-Item \"$dir\\SmartZip.ini\" | Out-Null }",
     "extract_dir": "SmartZip",
     "env_add_path": ".",
     "bin": [
@@ -16,6 +17,9 @@
             "SmartZip.exe",
             "smartzip"
         ]
+    ],
+    "persist": [
+        "SmartZip.ini"
     ],
     "shortcuts": [
         [

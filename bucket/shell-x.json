@@ -1,15 +1,19 @@
 {
-    "version": "1.5.9.0",
+    "version": "1.5.6.0",
     "description": "Dynamic context menu manager for Windows.",
     "homepage": "https://github.com/oleg-shilo/shell-x",
+    "notes": "Visit https://github.com/oleg-shilo/shell-x to know install and uninstall.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/oleg-shilo/shell-x/releases/download/v1.5.9.0/shell-x.v1.5.9.0.7z",
-            "hash": "773c3bd56258d96e831cb7429bc21267405b5d201a873f38e52b262ebbbc839d"
+            "url": "https://github.com/oleg-shilo/shell-x/releases/download/v1.5.6.0/shell-x.v1.5.6.0.7z",
+            "hash": "AD775CC5872D5CD4A475C5D77530E1713B32C0DDEA5C6DACDED34329DDCC873E"
         }
     },
     "env_add_path": ".",
     "bin": "shell-x.exe",
+    "persist": [
+        "portable_config"
+    ],
     "shortcuts": [
         [
             "shell-x.exe",

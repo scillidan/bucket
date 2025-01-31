@@ -13,6 +13,11 @@
             "hash": "11d2ebbd7118b8f39cffaf65f1778bba43b204e30c4fb463f5d05ebca9e3984c"
         }
     },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Settings.ini\")) { New-Item \"$dir\\Settings.ini\" | Out-Null }",
+    "persist": [
+        "Settings.ini",
+        "bundles"
+    ],
     "shortcuts": [
         [
             "lintalist.exe",
