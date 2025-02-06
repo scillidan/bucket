@@ -1,0 +1,32 @@
+{
+    "version": "2.3.4",
+    "description": "A simple pixel ruler for Desktop.",
+    "homepage": "https://github.com/ZhujinLi/SomeRuler",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ZhujinLi/SomeRuler/releases/download/v2.3.4/someruler.pro-v1-msvc2019_64-default.zip",
+            "hash": "cf3f6c2e575cc6013b4c68670f0fa1b33dde3937ffc3d88b3861e82bab922aa7"
+        }
+    },
+    "extract_dir": "dist",
+    "shortcuts": [
+        [
+            "SomeRuler.exe",
+            "SomeRuler"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/ZhujinLi/SomeRuler",
+        "checkver": "github",
+        "url": "https://github.com/ZhujinLi/SomeRuler/releases/latest",
+        "regex": "someruler.pro-v(\\d{1})-msvc([\\d_]+)-default.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ZhujinLi/SomeRuler/releases/download/v$version/someruler.pro-v(\\d{1})-msvc([\\d_]+)-default.zip"
+            }
+        }
+    }
+}
