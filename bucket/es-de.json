@@ -1,0 +1,37 @@
+{
+    "version": "3.1.1",
+    "description": "ES-DE is a frontend for browsing and launching games from your multi-platform collection.",
+    "homepage": "https://gitlab.com/es-de/emulationstation-de",
+    "license": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitlab.com/es-de/emulationstation-de/-/package_files/164503025/download",
+            "hash": ""
+        }
+    },
+    "extract_dir": "ES-DE",
+    "env_add_path": ".",
+    "bin": [
+        [
+            "ES-DE.exe",
+            "es-de"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "ES-DE.exe",
+            "ES-DE"
+        ]
+    ],
+    "checkver": {
+        "url": "https://gitlab.com/es-de/emulationstation-de/-/releases",
+        "regex": "ES-DE_([\\d.]+)-x64_Portable.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gitlab.com/es-de/emulationstation-de/-/releases/$version/ES-DE_3.1.1-x64_Portable.zip"
+            }
+        }
+    }
+}

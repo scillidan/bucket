@@ -1,0 +1,24 @@
+{
+    "version": "1.0.0",
+    "description": "Go Version Manager for Windows.",
+    "homepage": "https://github.com/danielkermode/gvm",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/danielkermode/gvm/releases/download/v1.0.0-amd64/gvm.exe",
+            "hash": "850689FAB619EB21F6D8EA50F7EB0C85E132A3012E2D334FF64F50DADA68E37D"
+        }
+    },
+    "bin": "gvm.exe",
+    "checkver": {
+        "url": "https://github.com/danielkermode/gvm",
+        "checkver": "github"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/danielkermode/gvm/releases/download/v$version-amd64/gvm.exe"
+            }
+        }
+    }
+}

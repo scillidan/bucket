@@ -1,0 +1,30 @@
+{
+    "version": "4bd1a60",
+    "description": "Small and efficient screen recording utility for Windows 10 and 11.",
+    "homepage": "https://github.com/mmozeiko/wcap",
+    "license": "Unlicense license",
+    "architecture": {
+        "64bit": {
+            "url": "https://raw.githubusercontent.com/wiki/mmozeiko/wcap/wcap-x64.exe",
+            "hash": "3F4017FB2224D0D2C023AD376A0148D76D90F75B7713AE7F03012930A57452EC"
+        }
+    },
+    "shortcuts": [
+        [
+            "wcap-x64.exe",
+            "wcap"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/mmozeiko/wcap/commits/maim.atom",
+        "regex": "(\\d+)-(\\d+)-(\\d+)[\\S\\s]*?(?<sha>[0-9a-f]{40})",
+        "replace": "0.${1}.${2}.${3}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://raw.githubusercontent.com/wiki/mmozeiko/wcap/wcap-x64.exe"
+            }
+        }
+    }
+}
