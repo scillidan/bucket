@@ -1,0 +1,37 @@
+{
+    "version": "5.2.0",
+    "description": "Extracts text from video games and visual novels. Highly extensible.",
+    "homepage": "https://github.com/Artikash/Textractor",
+    "license": "GPL-3.0",
+    "notes": "Please install Unicode font.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Artikash/Textractor/releases/download/v5.2.0/Textractor-5.2.0-Zip-Version-English-Only.zip",
+            "hash": "3EFDCF390261FCFB6A44220113C68B06EBA22A3EF441AC618208238B52EE7974"
+        }
+    },
+    "extract_dir": "Textractor",
+    "bin": [
+        [
+            "x64/TextractorCli.exe",
+            "textractorcli.exe"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "x64/Textractor.exe",
+            "Textractor"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/Artikash/Textractor/releases/latest",
+        "regex": "Textractor-([\\d.]+)-Zip-Version-English-Only.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Artikash/Textractor/releases/download/v$version/Textractor-v$version-Zip-Version-English-Only.zip"
+            }
+        }
+    }
+}
