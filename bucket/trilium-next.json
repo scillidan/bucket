@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/TriliumNext/Notes/releases/download/$version/TriliumNextNotes-v$version-windows-x64.zip"
+                "url": "https://github.com/TriliumNext/Notes/releases/download/v$version/TriliumNextNotes-v$version-windows-x64.zip"
             }
         }
     }
