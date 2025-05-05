@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "url": "https://github.com/cutandjoin/Cjam/releases/latest",
-        "regex": "cjam_v(\d{4})en.zip"
+        "regex": "cjam_v(\\d{4})en.zip"
     },
     "autoupdate": {
         "architecture": {
