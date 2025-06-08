@@ -5,9 +5,12 @@
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cutandjoin/Cjam/releases/download/v1960e/cjam_v1960en.zip",
-            "hash": "D5E16391211B4B7F9D06EE78E7143C590B909C23FD1DF1614FA68F94B05FC826"
+            "url": "https://github.com/cutandjoin/Cjam/releases/download/v1980e/cjam_v1980e.zip",
+            "hash": "CD0B87D602BC807681BE35DD6F15CE47C3F0A21BDF93B3E69C14825237228051"
         }
+    },
+    "suggest": {
+        ".NET Desktop Runtime": "versions/windowsdesktop-runtime-6.0"
     },
     "extract_dir": "Cjam",
     "shortcuts": [
@@ -18,12 +21,12 @@
     ],
     "checkver": {
         "url": "https://github.com/cutandjoin/Cjam/releases/latest",
-        "regex": "cjam_v(\\d{4})en.zip"
+        "regex": "cjam_v(\\d{4})e.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/cutandjoin/Cjam/releases/download/v$cleanVersione/cjam_v$cleanVersionenen.zip"
+                "url": "https://github.com/cutandjoin/Cjam/releases/download/v$cleanVersione/cjam_v$cleanVersionene.zip"
             }
         }
     }
